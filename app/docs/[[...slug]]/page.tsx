@@ -1,8 +1,7 @@
 import Link from 'next/link';
-
 import { ChevronRight } from 'lucide-react';
 
-import { Card, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 
 interface DocsPageProps {
@@ -20,7 +19,7 @@ export default async function DocsPage({ params }: DocsPageProps) {
 
   if (!slug) {
     return (
-      <div className="container mx-auto px-4 py-8">
+      <div className="container py-8">
         <div className="space-y-8">
           <h1 className="text-4xl font-bold">문서 메인 페이지</h1>
           <Separator />
@@ -50,7 +49,7 @@ export default async function DocsPage({ params }: DocsPageProps) {
   }
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container py-8">
       <div className="space-y-8">
         <div className="space-y-4">
           <div className="text-muted-foreground flex items-center gap-2">

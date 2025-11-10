@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+
 import {
   Briefcase,
   Code,
@@ -90,7 +91,7 @@ export default function AboutLayout({
   };
 
   return (
-    <div className="container mx-auto px-4 py-8 lg:px-8">
+    <div className="container py-8 lg:px-8">
       <div className="flex flex-col gap-8 lg:flex-row">
         {/* 좌측 사이드바 */}
         <aside className="shrink-0 lg:sticky lg:top-24 lg:h-fit lg:w-64">

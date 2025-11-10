@@ -1,5 +1,4 @@
 import Link from 'next/link';
-
 import { CalendarDays, ChevronLeft, ChevronRight, Clock, User } from 'lucide-react';
 
 import { Badge } from '@/components/ui/badge';
@@ -8,7 +7,7 @@ import { Separator } from '@/components/ui/separator';
 
 export default function BlogPost() {
   return (
-    <article className="container mx-auto px-4 py-12">
+    <article className="container py-12">
       {/* 블로그 헤더 */}
       <div className="space-y-4">
         <div className="space-y-2">
