@@ -1,8 +1,8 @@
+import { defineConfig, globalIgnores } from 'eslint/config';
 import nextVitals from 'eslint-config-next/core-web-vitals';
 import nextTs from 'eslint-config-next/typescript';
 import prettier from 'eslint-config-prettier';
 import importPlugin from 'eslint-plugin-import';
-import { defineConfig, globalIgnores } from 'eslint/config';
 
 const eslintConfig = defineConfig([
   ...nextVitals,
@@ -25,7 +25,7 @@ const eslintConfig = defineConfig([
       'no-unused-vars': ['warn', { argsIgnorePattern: '^_', varsIgnorePattern: '^_' }],
       // 콘솔 활용은 개발/디버깅에 유용하므로 경고 수준
       'no-console': ['warn', { allow: ['warn', 'error', 'info'] }],
-      // Import 정렬 규칙 (Prettier와 충돌 방지를 위해 off, Prettier가 처리)
+      // Import 정렬 규칙 (ESLint가 처리)
       'sort-imports': 'off',
       'import/order': [
         'warn',
